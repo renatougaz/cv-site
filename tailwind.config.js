@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,tsx}"],
+  content: ["./src/**/*.{html,tsx,js,jsx,ts}"],  // Ensure the paths match your project structure
   theme: {
-    colors: {
-      // highlight: '#BEE5EA',
+    extend: {
+      colors: {
+        'highlight': '#BEE5EA',  // Updated color value
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
-

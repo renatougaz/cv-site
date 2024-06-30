@@ -5,11 +5,15 @@ import Navbar from "../components/Navbar";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/demos" element={<Homepage />} />
-      </Routes>
+      <div className="flex flex-col h-screen">
+        <Navbar />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/demos" element={<Homepage />} />
+          </Routes>
+        </div>
+      </div>
     </Router>
   );
 }
