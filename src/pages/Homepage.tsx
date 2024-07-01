@@ -1,22 +1,19 @@
-import React from "react";
 import "./App.css";
+import Accent from "../components/Accent";
 
 function Homepage() {
   return (
-    <div className="App flex flex-row font-bold text-6xl p-6 h-screen ">
-      <div className="flex flex-col p-5 justify-center items-center">
+    <div id="about" className="App flex flex-row font-bold text-6xl p-6 h-full">
+      <div className="flex flex-col flex-1 justify-center items-center">
         <p>
-          Hey my name is <span className="text-highlight"> Renato</span>
+          Hey my name is { Accent("Renato") }
         </p>
         <p>
-          I'm a  <span className="text-highlight">Software engineer</span>
+          I'm a { Accent("Software Engineer") }
         </p>
       </div>
-
-      <div className="flex flex-col p-5 justify-center items-center">
-        <p>
-          Wanna get to know me?
-        </p>
+      <div className="flex flex-col flex-1 justify-center items-center">
+        <p>Wanna get to know me?</p>
       </div>
     </div>
   );
