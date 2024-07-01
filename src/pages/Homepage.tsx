@@ -1,5 +1,5 @@
 import "./App.css";
-import Accent from "../components/Accent";
+import Accent from "../util/Accent";
 
 function Homepage() {
   return (
